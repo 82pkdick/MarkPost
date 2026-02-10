@@ -7,7 +7,8 @@ export const load: PageLoad = async ({ params, fetch }) => {
 
   const pageNumber = params.num;
 
-  const response = await fetch(`/markpost/api/page/${pageNumber}`);
+  // const response = await fetch(`/markpost/api/page/${pageNumber}`);
+  const response = await fetch(`/api/page/${pageNumber}`);
 
   if (!response.ok) {
     error(404, { message: 'Page not found' });
