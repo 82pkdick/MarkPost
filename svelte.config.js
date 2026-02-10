@@ -8,13 +8,13 @@ const config = {
 	
 	kit: {
 		adapter: adapter({
-			// fallback: "index.html",
+			fallback: "index.html",
 			edge: false,
 			split: false
 		}),
-		// paths: {
-			// base: `/markpost`
-		// },
+		paths: {
+			base: `/markpost`
+		},
 	}
 };
 
