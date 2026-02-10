@@ -15,9 +15,9 @@ export const GET: RequestHandler = async ({ params, request, fetch }) => {
   let dataUrlBase = '';
 
   if (import.meta.env.MODE === 'production') {
-    dataUrlBase = `${config.JsonDataHostUrl}/${config.JsonDataBasePath}`;
+    dataUrlBase = `${config.JsonDataHostUrl.production}/${config.JsonDataBasePath}`;
   } else {
-    dataUrlBase = `/${config.JsonDataBasePath}`;
+    dataUrlBase = `${config.JsonDataHostUrl.development}/${config.JsonDataBasePath}`;
   }
 
   if (params.num) {
