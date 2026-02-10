@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { PageData } from "./$types";
-  // import type { PageInfo } from "$lib/types";
 
   const { data }: { data: PageData } = $props();
 
@@ -8,8 +7,8 @@
   let pageData = $derived(data.pageData);
 
   $effect(() => {
-    // console.log('in list pageNumber: ', pageNumber);
-    // console.log('in list pageData: ', pageData);
+    // console.log('in list/[num] pageNumber: ', pageNumber);
+    // console.log('in list/[num] pageData: ', pageData);
   });
 </script>
 
