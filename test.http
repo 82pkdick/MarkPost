@@ -1,14 +1,14 @@
 ### 1 first page data
-GET http://localhost:8080/markpost/api/page/1
+GET http://localhost:8080/api/page/1
 
 ### 2 next page data
-GET http://localhost:8080/markpost/api/page/2
+GET http://localhost:8080/api/page/2
 
 ### 3 last page data
-GET http://localhost:8080/markpost/api/page/5
+GET http://localhost:8080/api/page/5
 
 ### 4 not exist page data
-GET http://localhost:8080/markpost/api/page/6
+GET http://localhost:8080/api/page/6
 
 ### 5 production mode access
-GET http://192.168.3.9:4173/markpost/api/page/1
+GET http://192.168.3.9:4173/api/page/1
