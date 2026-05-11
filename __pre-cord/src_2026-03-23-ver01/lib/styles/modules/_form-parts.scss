@@ -1,0 +1,107 @@
+//--- Customizing Form Parts
+
+@use '../mixin' as mixin;
+
+.wrapper.input {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  overflow: hidden;
+
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 2px;
+    font-size: .9rem;
+    color: var(--form-label-color);
+
+    .label-mark {
+      color: var(--form-label-mark-color);
+      opacity: .6;
+    }
+
+    .label-text {
+      padding-left: 2px;
+    }
+  }
+
+  .post-title {
+    color: var(--form-post-title);
+  }
+}
+
+textarea.form-input {
+  width: 100%;
+  margin: 3px 0 15px;
+  field-sizing: content;
+  resize: none;
+  scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+  scrollbar-width: thin;
+  background-color: var(--form-parts-bg);
+}
+
+input[type=text].form-input {
+  width: 100%;
+  background-color: var(--form-parts-bg);
+
+  &:read-only {
+    background-color: rgb(from var(--form-parts-bg) r g b / 0.3);
+    border: 1px solid var(--thin-bdr);
+  }
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+}
+
+.menu-btn {
+  margin: 0;
+  padding: 0;
+  width: 28px;
+  height: auto;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+form.form-panel button,
+.form-panel button {
+  --btn-w: 75px;
+  --btn-h: 32px;
+  --btn-mgn: 0 6px 6px 6px;
+  --btn-pad: 10px;
+  --btn-fs: 1rem;
+  --btn-bdr-radius: 3px;
+  width: auto;
+  height: auto;
+  min-width: var(--btn-w);
+  min-height: var(--btn-h);
+  margin: var(--btn-mgn);
+  padding: var(--btn-pad);
+  font-size: var(--btn-fs);
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--form-btn-bg);
+  border: 1px solid var(--form-btn-bdr);
+  border-radius: var(--btn-bdr-radius);
+  outline: none;
+}
+
+form.form-panel button.form-btn,
+.form-panel button.form-btn {
+  --btn-pad: 9px 20px;
+  --btn-bdr-radius: 6px;
+  color: var(--link-color);
+
+  @include mixin.hover-action {
+    border-width: 2px;
+    color: var(--link-color-hover);
+  }
+
+  &:focus, &:focus-visible {
+    outline: none;
+  }
+}

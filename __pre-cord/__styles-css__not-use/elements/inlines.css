@@ -1,0 +1,25 @@
+/* Inline Elements Base Styles */
+
+b  {
+  font-weight: 600;
+}
+strong {
+  font-weight: 750;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  @media (hover: hover) {
+    &:hover { 
+      text-decoration: none;
+      color: var(--link-color-hover);
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      text-decoration: none;
+      color: var(--link-color-hover);
+    }
+  }
+}

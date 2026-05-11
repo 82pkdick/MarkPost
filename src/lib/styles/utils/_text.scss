@@ -1,0 +1,40 @@
+/** 
+* Shared Module Text Style
+*/
+
+.fs-x03 {
+  font-size: 0.3rem;
+}
+.fs-x04 {
+  font-size: 0.4rem;
+}
+.fs-x05 { font-size: 0.5rem; }
+.fs-x06 { font-size: 0.6rem; }
+.fs-x07 { font-size: 0.7rem; }
+.fs-x08 { font-size: 0.8rem; }
+.fs-x09 { font-size: 0.9rem; }
+.fs-x10 { font-size: 1.0rem; }
+.fs-x11 { font-size: 1.1rem; }
+.fs-x12 { font-size: 1.2rem; }
+.fs-x13 { font-size: 1.3rem; }
+.fs-x14 { font-size: 1.4rem; }
+.fs-x15 { font-size: 1.5rem; }
+
+.bold { font-weight: 700; }
+
+.ft-mid {
+  color: var(--ft-mid);
+}
+
+.ft-weakened {
+  color: var(--ft-weakened);
+}
+
+.ft-title {
+  color: var(--list-card-title);
+}
+
+.post-title {
+  color: var(--post-header-title-color);
+}
+

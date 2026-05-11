@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500"
+   height="500"
+   viewBox="0 0 132.29173 132.29167"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
+   sodipodi:docname="MarkPostLogo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.56099023"
+     inkscape:cx="162.21316"
+     inkscape:cy="296.79661"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#e84141;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#e84141;stop-opacity:0;"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="4.21672"
+       y1="60.296838"
+       x2="142.24362"
+       y2="60.296838"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#c1216f;fill-opacity:1;stroke:#b92761;stroke-width:1.08055;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3"
+       width="131.88159"
+       height="132.2585"
+       x="-0.10121188"
+       y="0.47811425" />
+    <path
+       style="font-size:168.247px;font-family:'Abyssinica SIL';-inkscape-font-specification:'Abyssinica SIL';fill:#fdfdfd;fill-opacity:1;stroke:#ffffff;stroke-width:0.62062;stroke-linejoin:round;stroke-opacity:1"
+       d="M 123.25497,123.99899 H 87.507927 v -7.39208 l 7.536612,-0.67201 q 1.521146,-0.168 2.281723,-1.34402 0.82972,-1.17601 0.82972,-2.43603 V 17.317823 L 65.589521,123.99899 h -7.05261 L 27.076739,18.91384 v 93.24101 q 0,1.26002 0.760576,2.43603 0.829719,1.17602 2.35087,1.34402 l 8.089758,0.67201 v 7.39208 H 7.6474906 v -7.39208 l 8.0897574,-0.67201 q 1.521151,-0.168 2.212584,-1.34402 0.760575,-1.17601 0.760575,-2.43603 V 20.425859 q 0,-1.260015 -0.760575,-2.436028 -0.691433,-1.260014 -2.212584,-1.344015 L 7.6474906,15.973809 V 8.5817259 H 39.384235 V 13.201778 L 65.036376,97.706709 90.688512,13.705783 V 8.5817259 h 32.566458 v 7.3920831 l -7.67491,0.672007 q -1.52115,0.08401 -2.35087,1.344015 -0.76056,1.176013 -0.76056,2.436028 v 91.728991 q 0,1.26002 0.76056,2.43603 0.82972,1.17602 2.35087,1.34402 l 7.67491,0.67201 z"
+       id="text1"
+       aria-label="M" />
+  </g>
+</svg>

@@ -1,0 +1,72 @@
+/** 
+* Shared Module Display Flex Style
+*/
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-l-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-r-start {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.flex-r-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-r-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.flex-nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+/* Placed at both ends */
+.flex-bth-end {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-l-base {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.flex-r-base {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.flex-center-base {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}

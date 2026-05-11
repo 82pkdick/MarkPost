@@ -1,0 +1,277 @@
+/*
+* Default Markdown Styles
+**/
+
+@use '../../variables'as v;
+
+.md-content {
+  /* Headings */
+
+  /* font-size, line-height */
+  h1 {
+    font-size: clamp(1.6rem, 3.7vw, 2.2rem);
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 3.4vw, 2.0rem);
+  }
+
+  h3 {
+    font-size: clamp(1.4rem, 3.1vw, 1.8rem);
+  }
+
+  h4 {
+    font-size: clamp(1.3rem, 2.8vw, 1.6rem);
+  }
+
+  h5 {
+    font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+  }
+
+  h6 {
+    font-size: clamp(1.1rem, 2.2vw, 1.2rem);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+    page-break-after: avoid;
+  }
+
+  h1 {
+    font-weight: 500;
+    padding-bottom: .3em;
+  }
+
+  h2 {
+    font-weight: 500;
+    padding-bottom: .3em;
+  }
+
+  h3 {
+    font-weight: 500;
+  }
+
+  h4 {
+    font-weight: 600;
+  }
+
+  h5 {
+    font-weight: 600;
+  }
+
+  h6 {
+    font-weight: 600;
+  }
+
+  @media only screen and (max-width: v.$MobilephoneSize) {
+    h3, h4, h5, h6 {
+      letter-spacing: -1px;
+    }
+  }
+
+  /* Links */
+  a:not([href]) {
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  /* Images */
+  img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* Paragraphs */
+  p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    letter-spacing: 0.1em;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: normal;
+    /* text-align: justify; */
+    text-justify: inter-character;
+    font-feature-settings: "palt"1;
+  }
+
+  /* List */
+  ul, ol {
+    margin-bottom: 16px;
+    padding-left: 2em;
+
+    &.no-list {
+      padding: 0;
+      list-style-type: none;
+    }
+
+    li {
+      margin-bottom: 0;
+
+      &.task-list-item {
+        list-style: none;
+      }
+
+      >p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  ul ul, ul ol, ol ol, ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  dl {
+    padding-left: 2em;
+
+    dt {
+      padding: 0;
+      margin-top: 16px;
+      font-size: 1em;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    dd {
+      padding: 0 16px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .task-list-item-checkbox {
+    margin: 0 .2em .25em -1.8em;
+    vertical-align: middle;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  /* Blockquote */
+  blockquote {
+    margin: 16px 0;
+    font-size: inherit;
+    padding: 10px 15px;
+
+    > :first-child {
+      /* margin-top:0; */
+    }
+
+    > :last-child {
+      /* margin-bottom:0; */
+    }
+  }
+
+  /* Hr */
+  hr {
+    height: 2px;
+    margin: 32px 0;
+  }
+
+  /* Table */
+  table {
+    margin: 10px 0 15px 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    word-break: normal;
+    word-break: keep-all;
+
+    th {
+      font-weight: bold;
+    }
+
+    td, th {
+      padding: 6px 13px;
+    }
+  }
+
+  /* Code */
+  pre code, .highlight pre code {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+
+  pre>code, .highlight>pre>code {
+    padding: 16px 2em 14px 1.2em;
+  }
+
+  .highlight .chroma {
+    margin: 30px 0;
+
+    /* monokai original background -> #272822; */
+    pre {
+      margin: 10px 0;
+    }
+
+    table.lntable {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+
+      tbody {
+        display: flex;
+
+        tr {
+          display: block;
+          padding: 15px 5px 12px;
+
+          td pre {
+            margin: 0 !important;
+            width: 100%;
+
+            code {
+              overflow: hidden;
+
+              .hl {
+                width: 102%;
+              }
+            }
+          }
+
+          td.lntd {
+            padding: 0 5px;
+          }
+
+          td.lntd:nth-child(1) * {
+            width: auto;
+            margin: 0;
+            overflow: hidden;
+
+            code {
+              padding: 0 0 0 3px;
+            }
+          }
+
+          td:nth-child(2) {
+            width: 100vw;
+
+            code {
+              padding: 0 1.0em 0 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

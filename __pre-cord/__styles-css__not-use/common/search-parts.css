@@ -1,0 +1,21 @@
+/** search result item-excerpt */
+
+.post-card.searched-post-card {
+  div.item-excerpt {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    margin-top: 2px;
+    max-height: 8em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: .4em;
+    color: var(--matched-block-ft);
+    line-height: 1.3;
+    background-color: var(--matched-block-bg);
+
+    .excerpt-match {
+      color: var(--excerpt-match-ft);
+      font-weight: 600;
+    }
+  }
+}

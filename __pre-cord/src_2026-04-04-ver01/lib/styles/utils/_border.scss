@@ -1,0 +1,54 @@
+/** 
+* Shared Module Border Style
+*/
+
+/* Border */
+.bdr {
+  border: 1px solid var(--bdr-color-default);
+}
+
+.bdr-top {
+  border-top: 1px solid var(--bdr-color-default);
+}
+
+.bdr-btm {
+  border-bottom: 1px solid var(--bdr-color-default);
+}
+
+.bdr-left {
+  border-left: 1px solid var(--bdr-color-default);
+}
+
+.bdr-right {
+  border-right: 1px solid var(--bdr-color-default);
+}
+
+.thin-bdr {
+  border: 1px solid;
+  border-color: var(--thin-bdr);
+}
+
+.thin-bdr-light {
+  border-color: var(--thin-bdr-light);
+}
+
+/* Shadow */
+.btm-shadow {
+  box-shadow: 1px 1px 2px -1px var(--bdr-color-default);
+}
+
+.top-shadow {
+  box-shadow: 0 -2px 2px -1px var(--bdr-color-default);
+}
+
+.r-shadow {
+  box-shadow: 1.5px 0 2px -1px var(--bdr-color-default);
+}
+
+.l-shadow {
+  box-shadow: -2px 0 2px -1px var(--bdr-color-default);
+}
+
+.drop-shadow {
+  box-shadow: 1px 1px 2px -1px var(--bdr-color-default);
+}

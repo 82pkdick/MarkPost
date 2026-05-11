@@ -1,0 +1,104 @@
+/* Form Elements Base Styles */
+
+button, input, textarea {
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
+}
+
+button, input[type=button], input[type=checkbox], input[type=submit] {
+  cursor: pointer;
+}
+
+input:not([type=checkbox]), input:not([type=radio]), select {
+  display: block;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+button, input:not([type=checkbox]), input:not([type=radio]), select, textarea {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  margin-right: 0;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+button, input[type=button], input[type=submit] {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+@media (hover: hover) {
+
+  button:hover,
+  input[type='submit']:hover,
+  input[type='button']:hover {
+    background: var(--bg-rear);
+  }
+}
+
+@media (hover: none) {
+
+  button:active,
+  input[type='submit']:active,
+  input[type='button']:active {
+    background: var(--bg-rear);
+  }
+
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+  box-shadow: 0 0 0 2px var(--bg-default);
+}
+
+button:active, input[type=button]:active, input[type=checkbox]:active, input[type=radio]:active, input[type=submit]:active {
+  transform: translateY(2px);
+}
+
+button:disabled, input:disabled, select:disabled, textarea:disabled {
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+/* input の自動補完時のデフォルト背景と文字色を変更 */
+input:-webkit-autofill {
+  /* background-colorでは変わらないため、box-shadowを指定。*/
+  box-shadow: 0 0 0 1000px rgb(236, 231, 231) inset !important;
+  -webkit-text-fill-color: #333 !important;
+}
+
+/* 自動補完後のカーソルが黒になるので、合わせて変更。*/
+input:-webkit-autofill:focus {
+  caret-color: #555 !important;
+}
+
+::-webkit-input-placeholder {
+  color: var(--ft-light-weakened);
+}
+
+:-ms-input-placeholder {
+  color: var(--ft-light-weakened);
+}
+
+::-ms-input-placeholder {
+  color: var(--ft-light-weakened);
+}
+
+::placeholder {
+  color: var(--ft-light-weakened);
+}

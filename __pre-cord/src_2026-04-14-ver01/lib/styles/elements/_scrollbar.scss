@@ -1,0 +1,34 @@
+/* Scrollbar Base Styles */
+
+@use '../mixin' as mixin;
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background-color: var(--scrollbar-bg-default) !important;
+
+  @include mixin.hover-action {
+    background-color: var(--scrollbar-hover-bg) !important;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--scrollbar-thumb-bg) !important;
+
+  @include mixin.hover-action {
+    background-color: var(--scrollbar-thumb-hover-bg) !important;
+  }
+}
+
+::-moz-selection {
+  background-color: var(--selection-bg) !important;
+}
+
+::selection {
+  background-color: var(--selection-bg) !important;
+}

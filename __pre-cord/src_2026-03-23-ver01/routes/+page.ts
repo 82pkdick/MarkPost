@@ -1,0 +1,17 @@
+import { error } from "@sveltejs/kit";
+import { resolve } from '$app/paths';
+import type { PageLoad } from "./$types";
+import type { LoadedPageData } from "$lib/types";
+
+export const load: PageLoad = async ({ fetch }) => {
+  const base = resolve('/');
+  const response = await fetch(`${base}api/page/1`);
+
+  if (!response.ok) {
+    error(404, { message: 'Page not found' });
+  }
+
+  const pagedata: LoadedPageData = await response.json();
+
+  return { number: '1', pageData: pagedata };
+};

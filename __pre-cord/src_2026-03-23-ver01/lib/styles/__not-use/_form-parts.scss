@@ -1,0 +1,134 @@
+/** 
+* Form Parts Styles
+*/
+
+.menu-btn {
+  margin: 0;
+  padding: 0;
+  width: 28px;
+  height: auto;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+form.form-panel button,
+.form-panel button {
+  --btn-w: 75px;
+  --btn-h: 32px;
+  --btn-mgn: 0 6px 6px 6px;
+  --btn-pad: 10px;
+  --btn-fs: 1rem;
+  --btn-bdr-radius: 3px;
+  width: auto;
+  height: auto;
+  min-width: var(--btn-w);
+  min-height: var(--btn-h);
+  margin: var(--btn-mgn);
+  padding: var(--btn-pad);
+  font-size: var(--btn-fs);
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--form-btn-bg);
+  border: 1px solid var(--form-btn-bdr);
+  border-radius: var(--btn-bdr-radius);
+  outline: none;
+}
+
+form.form-panel button.form-btn,
+.form-panel button.form-btn {
+  --btn-pad: 9px 20px;
+  --btn-bdr-radius: 6px;
+  color: var(--link-color);
+
+  @media (hover: hover) {
+    &:hover {
+      border-width: 2px;
+      color: var(--link-color-hover);
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      border-width: 2px;
+      color: var(--link-color-hover);
+    }
+  }
+
+  &:focus, &:focus-visible {
+    outline: none;
+  }
+}
+
+/* .form-btn-default {
+  padding: 9px 20px;
+  font-size: .9rem;
+  font-weight: 400;
+  color: var(--link-color);
+  border: 1px solid var(--bdr-color-default);
+  border-radius: 6px;
+  background-color: var(--form-parts-bg);
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    border-width: 2px;
+  }
+  &:focus, &:focus-visible {
+    outline: none;
+  }
+} */
+
+/* .form-btn-linklike {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover, &:focus, &:focus-visible {
+    border: none;
+    outline: none;
+  }
+} */
+
+/* .form-input-default {
+  display: block;
+  width: 100%;
+  margin: 3px 0 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: var(--form-parts-bg);
+  border: none;
+  border-radius: 6px;
+  outline: none;
+} */
+
+/* textarea {
+  scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background-color: var(--bg-default);
+    @media (hover: hover) {
+      &:hover { background-color: var(--scrollbar-bg); }
+    }
+    @media (hover: none) {
+      &:active { background-color: var(--scrollbar-bg); }
+    }
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--scrollbar-thumb-bg);
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--scrollbar-thumb-hover-bg);
+      }
+    }
+    @media (hover: none) {
+      &:active {
+        background-color: var(-scrollbar-thumb-hover-bg);
+      }
+    }
+  }
+} */

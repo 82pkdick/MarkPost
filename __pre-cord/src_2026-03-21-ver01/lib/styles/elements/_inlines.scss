@@ -1,0 +1,20 @@
+/* Inline Elements Base Styles */
+
+@use '../mixin' as mixin;
+
+b  {
+  font-weight: 600;
+}
+strong {
+  font-weight: 750;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+
+  @include mixin.hover-action {
+    text-decoration: none;
+    color: var(--link-color-hover);
+  }
+}

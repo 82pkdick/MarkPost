@@ -1,14 +1,76 @@
+### Page Data
+
 ### 1 first page data
-GET http://localhost:8080/api/page/1
+GET http://localhost:3300/markpost/api/page/1
 
 ### 2 next page data
-GET http://localhost:8080/api/page/2
+GET http://localhost:3300/markpost/api/page/2
 
 ### 3 last page data
-GET http://localhost:8080/api/page/5
+GET http://localhost:3300/markpost/api/page/5
 
 ### 4 not exist page data
-GET http://localhost:8080/api/page/6
+GET http://localhost:3300/markpost/api/page/6
 
 ### 5 production mode access
-GET http://192.168.3.9:4173/api/page/1
+GET http://192.168.3.9:3300/markpost/api/page/1
+
+### ----------------------------------------
+### For sidebar menu
+
+### 6 sections by category data
+GET http://localhost:3300/markpost/api/sections
+
+### 7 tag names data
+GET http://localhost:3300/markpost/api/tags
+
+### ----------------------------------------
+### For taxonomies-list
+
+### 8 sections page data
+GET http://localhost:3300/markpost/api/sections/unsorted
+
+### 9 sections page 2 data
+GET http://localhost:3300/markpost/api/sections/unsorted/page/2
+
+### 10 tags page data
+GET http://localhost:3300/markpost/api/tags/sample
+
+### 11 tags page data
+GET http://localhost:3300/markpost/api/tags/youtube/page/2
+
+### ----------------------------------------
+### For post preview
+
+### 12 post data
+GET http://localhost:3300/markpost/api/post/2021-02-18t225902
+
+### ----------------------------------------
+### 13 Sections list for post edit page
+GET http://localhost:3300/markpost/api/sections/list
+
+### ----------------------------------------
+### 14 Search data for post
+GET http://localhost:3300/markpost/api/searchdata
+
+### ----------------------------------------
+### 15 Delete one post html file
+DELETE http://localhost:3300/markpost/api/archive/notrequired/2026-02-03t200908
+content-type: application/json
+
+### ----------------------------------------
+### 16 Check target URL for add new post, 404 page.
+POST http://localhost:3300/markpost/api/urlcheck
+content-type: application/json
+
+{
+  "srcUrl": "https://osaka.style/news/hoge" 
+}
+
+### 17 Check target URL for add new post, 200 page.
+POST http://localhost:3300/markpost/api/urlcheck
+content-type: application/json
+
+{
+  "srcUrl": "https://osaka.style/news/44852/" 
+}

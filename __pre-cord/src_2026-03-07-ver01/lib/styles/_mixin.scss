@@ -1,0 +1,31 @@
+/* Mixin */
+@mixin hover-action {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      @content;
+    }
+  }
+}
+
+@mixin previewMarkdown {
+  :global(.video_frame) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    :global(iframe) {
+      display: block;
+      position: relative;
+      top: 0;
+      margin: 15px auto 10px;
+    }
+  }
+  :global(.movie-wrap.movie-archive) {
+    display: none;
+  }
+}

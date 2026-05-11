@@ -1,0 +1,17 @@
+//--- Read Styles App Main SCSS
+
+/*
+ * mixin, scss変数は個々のスタイルファイル
+ * またはコンポーネントのスタイル定義で読み込むこと
+ */
+
+@charset 'UTF-8';
+
+@use './styles/theme/_variables';
+
+@use './styles/elements';
+@use './styles/common';
+@use './styles/utils';
+
+@use './styles/layouts';
+@use './styles/modules';

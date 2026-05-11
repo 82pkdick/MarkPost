@@ -1,0 +1,55 @@
+:global {
+
+  .wrapper.input {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    overflow: hidden;
+
+    .label {
+      display: block;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      margin-left: 2px;
+      font-size: .9rem;
+      color: var(--form-label-color);
+
+      .label-mark {
+        color: var(--form-label-mark-color);
+        opacity: .6;
+      }
+
+      .label-text {
+        padding-left: 2px;
+      }
+    }
+
+    .post-title {
+      color: var(--form-post-title);
+    }
+  }
+
+  textarea.form-input {
+    width: 100%;
+    margin: 3px 0 15px;
+    field-sizing: content;
+    resize: none;
+    scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+    scrollbar-width: thin;
+    background-color: var(--form-parts-bg);
+  }
+
+  input[type=text].form-input {
+    width: 100%;
+    background-color: var(--form-parts-bg);
+
+    &:read-only {
+      background-color: rgb(from var(--form-parts-bg) r g b / 0.3);
+      border: 1px solid var(--thin-bdr);
+    }
+
+  }
+
+
+}

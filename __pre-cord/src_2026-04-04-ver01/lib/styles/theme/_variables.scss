@@ -1,0 +1,378 @@
+/**
+* Color Theme
+*/
+
+:root {
+  /* **** Decoration Key Color **** */
+  --deco-color1: tan;
+  --deco-color2: maroon;
+  --deco-color3: darkkhaki;
+  --deco-color4: slategray;
+  --deco-color5: darkslategray;
+  --deco-color6: indianred;
+  --deco-color7: royalblue;
+  --deco-color8: olivedrab;
+  --deco-color9: lightcyan;
+  --deco-color10: steelblue;
+
+  /* **** Prepared Monotone Color **** */
+  --black: #101010;
+  --dark1: #161919;
+  --dark2: #252727;
+  --dark3: #2b2e34;
+  --darkgray1: #333;
+  --darkgray2: #3d3d3d;
+  --darkgray3: #555;
+  --darkgray4: #666;
+  --darkgray5: #777;
+  --darkgray6: #888;
+  --white: #fff;
+  --bright1: #fefefe;
+  --bright2: #f6f6f6;
+  --bright3: #e8e6e5;
+  --lightgray1: #d3d3d3;
+  --lightgray2: #c6c6c6;
+  --lightgray3: #bfbfbf;
+  --lightgray4: #a3a3a3;
+  --lightgray5: #9f9f9f;
+}
+
+
+:root {
+  /* ======== Font Color ============ */
+  --default-ft-color: var(--darkgray1);
+  --ft-mid: var(--darkgray3);
+  --ft-weakened: var(--darkgray5);
+  --ft-light-weakened: var(--darkgray6);
+  --ft-strong: var(--dark2);
+  --ft-emphasis: firebrick;
+  --post-header-title-color: var(--deco-color2);
+  --msg-success: forestgreen;
+  --msg-error: orangered;
+
+  /* =========== Link =============== */
+  --link-color: teal;
+  --link-color-hover: orange;
+  --link-animation: orange;
+  --link-color-current: orange;
+  --link-color-active: yellowgreen;
+
+  /* ======== Background ============ */
+  --bg-default: #f3eee5;
+  --bg-rear: #efe6db;
+  --bg-front: #faf5ef;
+  --link-btn-bg: #faf5ef;
+  --selection-bg: mistyrose;
+  --emphasis-bg: gold;
+  --focus-bg: rgba(255, 217, 0, 0.2);
+
+  /* ========== Border ============== */
+  --bdr-color-default: var(--lightgray4);
+  --thin-bdr: #c8c8c8;
+  --thin-bdr-light: #bababa;
+
+  /* ========== Items ============== */
+  /* ~~~ Site Item ~~~ */
+  --site-title-color: var(--deco-color7);
+  --site-logo-color: #2e8b57;
+  --site-title-hover-color: orange;
+
+  /* ~~~ Menu Item ~~~ */
+  --aside-menu-title: var(--darkgray1);
+  --aside-menu-text: var(--darkgray1);
+  --aside-menu-bdr: var(--darkgray1);
+  --aside-menu-bg: var(--darkgray1);
+
+  /* ~~~ Toc ~~~ */
+  --toc-marker: var(--lightgray3);
+  --toc-marker-current: yellowgreen;
+
+  /* ~~~ Posts List ~~~ */
+  --list-header-title-color: darkolivegreen;
+  --list-subtitle: rgb(102, 126, 60);
+  --list-subtitle-hover: darkgoldenrod;
+  --list-card-title: #5f7f8f;
+  --list-card-title-hover: darkgoldenrod;
+  --list-card-text: var(--darkgray1);
+  --current-card-link: var(--deco-color2);
+  --current-card-bg: rgba(184, 135, 11, 0.2);
+
+  /* ~~~ Footer ~~~ */
+  --footer-text-color: var(--darkgray1);
+
+  /* ~~~ Single Post ~~~ */
+  --post-header-title-color: var(--darkgray1);
+  --post-meta-text-color: var(--darkgray1);
+  --post-meta-marker: var(--deco-color1);
+
+  /* ~~~ Icon ~~~ */
+  --icon-color-default: var(--darkgray4);
+  --base-icon-stroke: var(--darkgray4);
+  --base-icon-fill: #bbb;
+  --custom-icon-fill: var(--lightgray5);
+  --icon-hover: #dfdfdf;
+  --icon-btn-hover: palegoldenrod;
+
+  /* ~~~ Scrollbar ~~~ */
+  --scrollbar-bg: #eee5da;
+  --scrollbar-hover-bg: #dad6d5;
+  --scrollbar-bdr: #bababa;
+  --scrollbar-thumb-bdr: #bababa;
+  --scrollbar-thumb-bg: #d8d8d8;
+  --scrollbar-thumb-hover-bg: #c8c8c8;
+
+  /* ~~~ Form ~~~ */
+  --btn-text: var(--darkgray2);
+  --btn-bdr: #dadada;
+  --btn-bg: #dadada;
+  --btn-active: #c07979;
+  --btn-bg-semi-transparent: rgba(243, 238, 229, 0.8);
+  --form-label-color: #333;
+  --form-label-mark-color: #c07979;
+  --form-parts-bg: #dedede;
+  --form-parts-bg-light: #e3e3e3;
+  --form-select-bg: #d8e0ef;
+  --form-ft-color-default: var(--default-ft-color);
+  --form-btn-bdr: var(--lightgray3);
+  --form-btn-bg: #dbdbdb;
+  --form-btn-bg-weak: var(--bright3);
+  --form-post-title: darkolivegreen;
+
+
+  /* ========== Markdown ============== */
+  /* ~~~ Heading ~~~ */
+  --heading1-color: var(--darkgray1);
+  --heading2-color: var(--darkgray1);
+  --heading3-color: var(--darkgray1);
+  --heading4-color: var(--darkgray1);
+  --heading5-color: var(--darkgray1);
+  --heading6-color: var(--darkgray1);
+
+  /* ~~~ Paragraphs ~~~ */
+  --caption: var(--deco-color8);
+
+  /* ~~~ Character styles ~~~ */
+  --italic-text: var(--darkgray1);
+  --bold-text: var(--darkgray1);
+  --strong: sienna;
+  --del: darkgray;
+
+  /* ~~~ List ~~~ */
+  --list-text: var(--darkgray1);
+  --list-mark: var(--darkgray1);
+  --deflist-dt: var(--deco-color7);
+  --li-marker: darkolivegreen;
+
+  /* ~~~ BlockQuote ~~~ */
+  --blockqt-text-color: var(--darkgray1);
+  --blockqt-bdr-main: #aec77d;
+  --blockqt-bdr-sub: #cfcfcf;
+  --blockqt-bg: #f5f3e8;
+
+  /* ~~~ Code Block ~~~ */
+  --inline-code-bg: #f5f5f5;
+  --pre-text: var(--darkgray2);
+  --pre-bdr: #c3c3c3;
+  --pre-bg: #efe6db;
+  --pre-scrollbar-thumb-bg: #dfd7cd;
+  --pre-scrollbar-thumb-hover: #d1cac2;
+  --code-chroma-bg: #272822;
+  --code-highlight: rgba(26, 77, 43, 0.6);
+  --code-scrollbar-thumb-bg: var(--darkgray4);
+  --code-scrollbar-thumb-hover: var(--darkgray6);
+
+  /* ~~~ Table ~~~ */
+  --tbl-text: var(--darkgray1);
+  --tbl-bg: #f3eee5;
+  --tbl-bdr: var(--lightgray4);
+  --tbl-bdr-strong: var(--lightgray2);
+  --tbl-bdr-strong-width: 2px;
+  --tbl-bdr-style: solid;
+  --tbl-head-text: var(--deco-color5);
+  --tbl-head-bg: #e3e3ed;
+  --tbl-front-bg: #f3eee5;
+  --tbl-evencell-bg: #ecefec;
+
+  /* ~~~ Image and Figure ~~~ */
+  --fig-bg: var(--white);
+
+  /* ~~~ NavPagination ~~~ */
+  --abbrev-color: slategray;
+  --page-link-color: royalblue;
+  --page-link-disabled-color: slategray;
+  --page-link-active-color: chocolate;
+  --page-link-hover-color: limegreen;
+
+  /* ~~~ Search ~~~ */
+  --matched-block-ft: var(--darkgray3);
+  --matched-block-bg: lavender;
+  --excerpt-match-ft: darkred;
+}
+
+:root[data-theme="dark"] {
+  /* ======== Font Color ============ */
+  --default-ft-color: var(--bright3);
+  --ft-mid: var(--lightgray3);
+  --ft-weakened: var(--lightgray5);
+  --ft-light-weakened: var(--lightgray3);
+  --ft-emphasis: gold;
+  --post-header-title-color: cornsilk;
+  --msg-success: limegreen;
+  --msg-error: orangered;
+
+  /* =========== Link =============== */
+  --link-color: #66cdaa;
+  --link-color-hover: orange;
+  --link-animation: orange;
+  --link-color-current: peru;
+  --link-color-active: slateblue;
+
+  /* ======== Background ============ */
+  --bg-default: #252727;
+  --bg-rear: #161919;
+  --bg-front: #292c32;
+  --link-btn-bg: #303337;
+  --selection-bg: slateblue;
+  --emphasis-bg: rgba(65, 105, 225, 0.6);
+  --focus-bg: rgba(65, 105, 225, 0.6);
+
+  /* ========== Border ============== */
+  --bdr-color-default: #4c4c4c;
+  --thin-bdr: #434343;
+  --thin-bdr-light: var(--darkgray2);
+
+  /* ========== Items ============== */
+  /* ~~~ Site Item ~~~ */
+  --site-title-color: cornflowerblue;
+  --site-logo-color: #2e8b57;
+  --site-title-hover-color: orange;
+  /* ~~~ Menu Item ~~~ */
+  --aside-menu-title: var(--bright3);
+  --aside-menu-text: var(--bright3);
+  --aside-menu-bdr: #4c4c4c;
+  --aside-menu-bg: #252727;
+
+  /* ~~~ Toc ~~~ */
+  --toc-marker: var(--darkgray5);
+  --toc-marker-current: lightskyblue;
+
+  /* ~~~ Posts List ~~~ */
+  --list-header-title-color: var(--deco-color8);
+  --list-subtitle: #c9c9b9;
+  --list-subtitle-hover: orange;
+  --list-card-title: var(--lightgray1);
+  --list-card-title-hover: orange;
+  --list-card-text: var(--bright3);
+  --current-card-link: orange;
+  --current-card-bg: rgba(30, 143, 255, 0.25);
+
+  /* ~~~ Footer ~~~ */
+  --footer-text-color: var(--bright3);
+
+  /* ~~~ Single Post ~~~ */
+  --post-header-title-color: var(--bright3);
+  --post-meta-text-color: var(--bright3);
+  --post-meta-marker: var(--deco-color4);
+
+  /* ~~~ Icon ~~~ */
+  --icon-color-default: var(--lightgray4);
+  --base-icon-stroke: #b6b6b6;
+  --base-icon-fill: #cfcfcf;
+  --custom-icon-fill: var(--lightgray5);
+  --icon-hover: var(--lightgray1);
+  --icon-btn-hover: rgba(226, 158, 69, 0.2);
+
+  /* ~~~ Scrollbar ~~~ */
+  --scrollbar-bg: #1c1e1e;
+  --scrollbar-hover-bg: #1e2020;
+  --scrollbar-bdr: #434343;
+  --scrollbar-thumb-bdr: #434343;
+  --scrollbar-thumb-bg: #3f3f3f;
+  --scrollbar-thumb-hover-bg: var(--darkgray3);
+
+  /* ~~~ Form ~~~ */
+  --btn-text: #222;
+  --btn-bdr: var(--darkgray3);
+  --btn-bg: var(--darkgray6);
+  --btn-active: darkcyan;
+  --btn-bg-semi-transparent: rgba(37, 39, 39, 0.8);
+  --form-label-color: var(--lightgray3);
+  --form-label-mark-color: olivedrab;
+  --form-parts-bg: #3b3e44;
+  --form-parts-bg-light: var(--darkgray3);
+  --form-select-bg: rgb(39, 59, 53);
+  --form-ft-color-default: var(--default-ft-color);
+  --form-btn-bdr: var(--darkgray3);
+  --form-btn-bg: var(--darkgray2);
+  --form-btn-bg-weak: var(--dark3);
+  --form-post-title: cornsilk;
+
+  /* ========== Markdown ============== */
+  /* ~~~ Heading ~~~ */
+  --heading1-color: var(--bright3);
+  --heading2-color: var(--bright3);
+  --heading3-color: var(--bright3);
+  --heading4-color: var(--bright3);
+  --heading5-color: var(--bright3);
+  --heading6-color: var(--bright3);
+
+  /* ~~~ Paragraphs ~~~ */
+  --caption: var(--deco-color8);
+
+  /* ~~~ Character styles ~~~ */
+  --italic-text: var(--bright3);
+  --bold-text: var(--bright3);
+  --strong: goldenrod;
+  --del: darkgray;
+
+  /* ~~~ List ~~~ */
+  --list-text: var(--bright3);
+  --list-mark: var(--bright3);
+  --deflist-dt: khaki;
+  --li-marker: darkgoldenrod;
+
+  /* ~~~ BlockQuote ~~~ */
+  --blockqt-text-color: var(--bright3);
+  --blockqt-bdr-main: var(--deco-color8);
+  --blockqt-bdr-sub: var(--darkgray3);
+  --blockqt-bg: #383d45;
+
+  /* ~~~ Code Block ~~~ */
+  --inline-code-bg: #383d45;
+  --pre-text: #f4f3f3;
+  --pre-bdr: var(--darkgray3);
+  --pre-bg: #383d45;
+  --pre-scrollbar-thumb-bg: #4d535e;
+  --pre-scrollbar-thumb-hover: #616874;
+  --code-chroma-bg: #191914;
+  --code-highlight: #462919;
+  --code-scrollbar-thumb-bg: var(--darkgray1);
+  --code-scrollbar-thumb-hover: var(--darkgray4);
+
+  /* ~~~ Table ~~~ */
+  --tbl-text: var(--bright3);
+  --tbl-bg: #383d45;
+  --tbl-bdr: var(--darkgray3);
+  --tbl-bdr-strong: var(--darkgray3);
+  --tbl-bdr-strong-width: 2px;
+  --tbl-bdr-style: solid;
+  --tbl-head-text: #dddab4;
+  --tbl-head-bg: #212429;
+  --tbl-front-bg: #252727;
+  --tbl-evencell-bg: #2f333a;
+
+  /* ~~~ Image and Figure ~~~ */
+  --fig-bg: var(--white);
+
+  /* ~~~ NavPagination ~~~ */
+  --abbrev-color: slategray;
+  --page-link-color: royalblue;
+  --page-link-disabled-color: slategray;
+  --page-link-active-color: chocolate;
+  --page-link-hover-color: limegreen;
+
+  /* ~~~ Search ~~~ */
+  --matched-block-ft: var(--lightgray3);
+  --matched-block-bg: rgba(47, 79, 79, 0.7);
+  --excerpt-match-ft: goldenrod;
+}

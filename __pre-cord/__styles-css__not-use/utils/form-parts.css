@@ -1,0 +1,212 @@
+/** 
+* Form Parts Styles
+*/
+
+button, input, textarea {
+  /* transition:  */
+  /* background-color .1s linear,  */
+  /* border-color .1s linear,  */
+  /* color .1s linear,  */
+  /* box-shadow .1s linear,  */
+  /* transform .1s ease; */
+}
+
+button, input[type=button], input[type=checkbox], input[type=submit] {
+  cursor: pointer;
+}
+
+input:not([type=checkbox]), input:not([type=radio]), select {
+  display: block;
+}
+
+input:not([type=checkbox]), input:not([type=radio]) {
+  width: 100%;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--form-ft-color-default);
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:not([type="checkbox"]), input:not([type="radio"]), select, textarea {
+  background-color: var(--form-parts-bg);
+}
+
+input:not([type="checkbox"]), input:not([type="radio"]), select {
+  display: block;
+}
+
+input:not([type="checkbox"]), input:not([type="radio"]) {
+  &:-webkit-autofill {
+    box-shadow: 0 0 0 1000px var(--thin4) inset;
+    -webkit-text-fill-color: var(--ft-color-default) !important;
+  }
+}
+
+button, input[type=button], input[type=submit] {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+button:active, input[type=button]:active, input[type=checkbox]:active, input[type=radio]:active, input[type=submit]:active {
+  /* transform: translateY(2px); */
+}
+
+button:disabled, input:disabled, select:disabled, textarea:disabled {
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+/* Customized Button */
+
+button {
+  --btn-w: 75px;
+  --btn-h: 32px;
+  --btn-mgn: 0 6px 6px 6px;
+  --btn-pad: 10px;
+  --btn-fs: 1.0rem;
+  --btn-bdr-color: var(--mid1);
+  --btn-bdr-radius: 3px;
+  --btn-bg: var(--thin3);
+
+  width: auto;
+  height: auto;
+  min-width: var(--btn-w);
+  min-height: var(--btn-h);
+  margin: var(--btn-mgn);
+  padding: var(--btn-pad);
+  font-size: var(--btn-fs);
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--btn-bg);
+  border: 1px solid var(--btn-bdr-color);
+  border-radius: var(--btn-bdr-radius);
+  outline: none;
+  z-index: 1000;
+}
+
+button.simple {
+  --btn-bdr-color: var(--thin-bdr);
+  --btn-bdr-radius: 6px;
+  background-color: transparent;
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--ex-thin1);
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      background-color: var(--ex-thin1);
+    }
+  }
+}
+
+button.form-btn {
+  --btn-pad: 9px 20px;
+  --btn-bdr-color: var(--form-btn-bdr);
+  --btn-bdr-radius: 6px;
+  --btn-bg: var(--form-btn-bg);
+  color: var(--link-color);
+
+  @media (hover: hover) {
+    &:hover {
+      border-width: 2px;
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      border-width: 2px;
+    }
+  }
+
+  &:focus, &:focus-visible {
+    outline: none;
+  }
+}
+
+button.form-btn.simple {
+  background-color: transparent;
+}
+
+button.linklike {
+  border: none;
+  background-color: transparent;
+  text-align: left;
+
+  &:hover, &:focus, &:focus-visible {
+    border: none;
+  }
+}
+
+/* Customized Textarea */
+
+textarea {
+  --scrollbar-bg: var(--scrollbar-bg-base);
+  --scrollbar-hover-bg: var(--scrollbar-bg-active);
+  --scrollbar-thumb-bg: var(--scrollbar-thum-bg-base);
+  --scrollbar-thumb-hover-bg: var(--scrollbar-thum-bg-active);
+
+  margin-right: 0;
+  width: 100%;
+  field-sizing: content;
+  resize: none;
+  scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+  scrollbar-width: thin;
+}
+
+/* Customized Form Input & Textarea */
+
+input.form-input, textarea.form-input {
+  width: 100%;
+  margin: 3px 0 15px;
+}
+
+/* Wrapping Element for Form Parts */
+
+.wrapper.input {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  overflow: hidden;
+
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 2px;
+    font-size: 0.9rem;
+    color: var(--form-label-color);
+
+    .label-mark {
+      color: var(--form-label-mark-color);
+
+      opacity: 0.6;
+    }
+    .label-text {
+      padding-left: 2px;
+    }
+  }
+}
+
+.unify {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .wrapper.input.unified-left {
+    width: calc(50% - 0.5rem);
+  }
+
+  .wrapper.input.unified-right {
+    width: calc(50% - 0.5rem);
+    margin-left: 0.5rem;
+  }
+}

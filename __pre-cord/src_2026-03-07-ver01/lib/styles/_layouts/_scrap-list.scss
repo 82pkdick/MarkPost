@@ -1,0 +1,41 @@
+@use "$lib/styles/scss-variables" as v;
+  
+:global {
+  .list-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    height: auto;
+    min-height: calc(#{v.$list_header_min_h}px + 10px);
+    margin: 5px 0 0;
+    padding: 0 1.2rem;
+    box-sizing: content-box;
+  }
+
+  #post-article {
+    padding-bottom: 60px;
+
+    .list-setion {
+      min-height: calc(100vh - #{v.$site_header_h}px - #{v.$list_header_min_h}px - #{v.$site_footer_h}px);
+
+      .scrap-list {
+        width: 98%;
+        height: auto;
+        min-height: calc(1vh * #{v.$contents_min_h});
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 350px),auto));
+        grid-auto-flow: dense;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        align-content: start;
+        margin: 0 auto 0;
+        padding: 8px 3px 35px;
+      }
+    }
+  }
+}

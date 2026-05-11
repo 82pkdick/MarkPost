@@ -1,0 +1,63 @@
+/* Block Elements Base Styles */
+p {
+  margin: 0;
+  letter-spacing: 0.03em;
+  white-space: pre-wrap;
+}
+
+ul {
+  ul {
+    padding-left: 1.0rem;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+  li {
+
+  }
+}
+
+/* Blockquote, address, Cite */
+blockquote {
+  font-style: normal;
+}
+
+blockquote > footer  {
+  margin-top: 10px;
+  font-style: normal;
+}
+address, blockquote cite {
+  font-style: normal;
+}
+
+/* hr */
+hr {
+  border: none;
+  border-top: 1px solid var(--bdr-color-default);
+}
+
+/* table */
+table {
+  table-layout: fixed;
+  display:table;
+  margin: 10px 0 35px 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: auto;
+  max-width: 100%;
+  overflow: hidden;
+
+  th  {
+    font-weight: 600;
+    border-bottom: 1px solid var(--bdr-color-default);
+  }
+  th, tr, td {
+    padding: 6px;
+    text-align: left;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: var(--bg-rear);
+  }
+}

@@ -1,0 +1,47 @@
+/** 
+* Sidebar Layout
+*/
+
+:global {
+	.site-sidebar {
+    position: relative;
+    padding: 18px 8px 100px 10px;
+  }
+
+
+    // .menu-item {
+    //   .menu-title {
+    //     .ft-subtitle {
+    //       .icon.inline.switch-icon {
+    //         // stroke-width: 0.5px;
+    //       }
+    //     }
+    //   }
+    // }
+
+
+  #sidemenuCategories.side-menu.type-categories,
+	#sidemenuTags.side-menu.type-tags  {
+		width: 0;
+		visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+
+    &.active {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+      align-self: start;
+      display: block;
+      width: 100%;
+      height: calc(100svh - 48px - 10px);
+      overflow-x: hidden;
+      overflow-y: auto;
+      visibility: visible;
+      opacity: 1;
+      z-index: 1000;
+      padding: 0.5rem 0.5rem 5.5rem 0.5rem;
+      transition: opacity 0.3s ease-in-out;
+    }
+	}
+
+}

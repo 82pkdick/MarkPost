@@ -1,0 +1,192 @@
+/** 
+* Icon Styles
+*/
+
+@use '../mixin' as mixin;
+
+/* Inline Icon Default */
+.icon.inline {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+
+  svg {
+    --stroke-width: 0.7;
+    --opacity: 0.7;
+
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    fill: var(--base-icon-fill);
+    fill-opacity: 0.1;
+    stroke: var(--base-icon-stroke);
+    stroke-linecap: square;
+    stroke-linejoin: miter;
+    stroke-width: var(--stroke-width);
+    opacity: var(--opacity);
+  }
+
+  &.switch-icon svg {
+    @include mixin.hover-action {
+      --stroke-width: 1.3;
+      --opacity: 1.0;
+    }
+  }
+}
+
+
+
+
+
+/* Individual fine tuning */
+/* .icon.inline { */
+/* &.menu-button-icon {
+    svg {
+      fill: var(--custom-icon-fill);
+      fill-opacity: 0.5;
+      stroke-width: 0.8;
+      width: 100%;
+      height: 100%;
+    }
+    &.switch-icon svg {
+      @include mixin.hover-action {
+        fill: var(--default-ft-color);
+        fill-opacity: 1;
+        stroke-width: 1.8;
+      }
+    }
+  } */
+/* &.hashtag-icon {
+    width: 16px;
+    height: 18px;
+    svg {
+      stroke-width: 0.9px;
+    }
+  } */
+/* &.external-link-icon {
+    svg {
+      stroke-width: 1.2px;
+    }
+  } */
+/* &.home-icon {
+    svg {
+      stroke-width: 0.5px;
+    }
+    &.switch-icon svg {
+      @include mixin.hover-action {
+        fill: var(--default-ft-color);
+        fill-opacity: 0.1;
+        stroke-width: 1.0px;
+      }
+    }
+  } */
+/* &.categories-icon {
+    svg {
+      stroke-width: 0.4px;
+    }
+    &.switch-icon svg {
+      @include mixin.hover-action {
+        fill: var(--default-ft-color);
+        fill-opacity: 0.1;
+        stroke-width: 1.0px;
+      }
+    }
+  } */
+/* &.tag-icon {
+    top: 2px;
+    left: 2px;
+    width: 40px;
+    height: 40px;
+    svg {
+      stroke-width: 0;
+      fill-opacity: 0.7;
+      fill: var(--custom-icon-fill);
+    }
+    &.switch-icon svg {
+      @include mixin.hover-action {
+        fill: var(--default-ft-color);
+        fill-opacity: 0.7;
+        stroke-width: 0;
+      }
+    }
+  } */
+/* &.search-icon {
+    svg{
+      stroke-width: 0.6;
+    }
+    &.switch-icon svg {
+      @include mixin.hover-action {
+        fill: var(--default-ft-color);
+        fill-opacity: 0.1;
+        stroke-width: 1.5;
+      }
+    }
+  } */
+/* &.gear-icon {
+    top: 5px;
+    left: 3px;
+    width: 35px;
+    height: 35px;
+    svg {
+      stroke-width: 0.4px;
+      fill-opacity: 0;
+    }
+    &.switch-icon svg {
+      @include mixin.hover-action {
+        fill: var(--default-ft-color);
+        fill-opacity: 0;
+        stroke-width: 0.7;
+      }
+    }
+  } */
+/* Site header Arrows angle icon */
+/* &.menu-expand-icon,
+  &.menu-contract-icon {
+    svg {
+      fill-opacity: 1.0;
+      stroke-width: 0.3;
+    }
+  } */
+/* for preview page */
+/* &.fileicon {
+    width: 20px;
+    height: 28px;
+    svg {
+      stroke-width: 0.2;
+      fill-opacity: 0.8;
+    }
+  } */
+/* &.open-preview-icon {
+    width: 24px;
+    height: 24px;
+    svg {
+      fill-opacity: 0.5;
+      stroke-width: 0.5px;
+    }
+  }
+  &.arrow-up-right-square-icon {
+    top: 3px;
+    svg {
+      fill-opacity: 0.5;
+      stroke-width: 0.5px;
+    }
+  }
+  &.create-new-folder-icon {
+    margin-top: -4px;
+    margin-left: -1px;
+    width: 32px;
+    height: 32px;
+    svg {
+      stroke-width: 0.7px;
+    }
+  } */
+/* } */

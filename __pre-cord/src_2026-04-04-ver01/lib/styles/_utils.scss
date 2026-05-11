@@ -1,0 +1,12 @@
+/* Utils */
+
+@use './utils/flex';
+@use './utils/text';
+@use './utils/background';
+@use './utils/border';
+
+/* Margin and Padding */
+.init-space {
+  margin: 0;
+  padding: 0;
+}
